@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="div">
+        <div class="d1">div one</div>
+        <div class="d2">
+            <div class="c1">c1</div>
+            <div class="c2">c2</div>
+            <div class="c3">c3</div>
+        </div>
+        <div class="d3"><button>ggg</button></div>
+
+    </div>
+    <style>
+        .div{
+            display: flex;
+            flex-direction: column;
+            width: 800px;
+        }
+        .d2{
+            display: grid;
+            grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+        }
+        .c1{
+            background-color: red;
+        }
+        .c2{
+            background-color: blue;
+        }
+        .c3{
+            background-color: green;
+        }
+        .d3{
+            background-color: black;
+        }
+
+
+
+    </style>
+</body>
+</html>
